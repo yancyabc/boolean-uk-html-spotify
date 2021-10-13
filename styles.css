@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  border: black solid 2px;
+  grid-template:
+    "aside topbar topbar" 0.5fr
+    "aside genre genre" 0.5fr
+    "aside main main" 5fr
+    "footer footer footer" 1fr/
+    1fr 5fr 1fr;
+  font-size: 100px;
+  color: white;
+}
+
+.topBar {
+  grid-area: topbar;
+  background-color: rgb(17, 15, 15);
+  text-align: right;
+  padding: 30px;
+}
+
+.upgradeButton {
+  border: solid 2px white;
+  height: 100px;
+  width: 350px;
+  border-radius: 50px;
+  background-color: rgb(17, 15, 15);
+  color: white;
+  font-size: 30px;
+  justify-content: end;
+}
+
+/*ASIDE */
+.aside {
+  display: grid;
+  grid-area: aside;
+  grid-template-rows: 150px 200px 400px;
+  background-color: black;
+  font-family: Gill sans;
+  padding: 40px;
+}
+
+.aside .logo {
+  margin-bottom: 20px;
+}
+
+.aside,
+.menu,
+.playlist {
+  font-size: 30px;
+}
+
+.aside .playlist {
+  margin-top: 50px;
+}
+
+ul {
+  list-style: none;
+  line-height: 2.5;
+}
+
+/*GENRE*/
+
+nav a {
+  margin-right: 5rem;
+  color: darkgrey;
+}
+a:visited {
+  text-decoration: none;
+  color: darkgrey;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.genre {
+  grid-area: genre;
+  font-family: Gill sans;
+  font-size: 30px;
+  color: grey;
+  text-align: center;
+  padding: 40px;
+}
+
+/*MAIN*/
+.main {
+  display: grid;
+  grid-area: main;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr;
+  font-family: Gill sans;
+  font-size: 50px;
+  padding: 40px;
+}
+
+p {
+  font-size: 30px;
+  color: grey;
+  line-height: 2.5;
+}
+
+.main,
+.genre {
+  background-color: rgb(31, 27, 27);
+}
+
+.recentlyPlayed {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  text-align: center;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+/* FOOTER */
+.footer {
+  display: grid;
+  grid-area: footer;
+  grid-template-columns: 1fr 2fr 1fr;
+  background-color: rgb(46, 45, 45);
+}
+
+.footer .albumCover {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  padding: 30px;
+  margin-top: 20px;
+}
+
+.footer .playBar {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.footer .soundBar {
+  margin-right: 50px;
+}
+
+h4 {
+  font-size: 40px;
+}
+
+.cover {
+  height: 500px;
+  width: 500px;
+}
+
+.popular {
+  border-radius: 50%;
+}
+
+
